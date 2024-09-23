@@ -1,0 +1,155 @@
+/* Reset some defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #e6e6e6;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo img {
+    width: 100px;
+    margin-left: 10px;
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    max-width: 600px;
+}
+
+.searchbar input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #e6e6e6;
+    border-radius: 2px;
+}
+
+.searchbar button {
+    background-color: #f8f8f8;
+    border: none;
+    cursor: pointer;
+}
+
+.navigation-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.material-icons {
+    cursor: pointer;
+    font-size: 28px;
+}
+
+/* Main body and sidebar */
+.mainbody {
+    display: flex;
+    padding: 20px;
+}
+
+.categories {
+    width: 200px;
+    background-color: #fff;
+    padding: 10px;
+    border-right: 1px solid #e6e6e6;
+}
+
+.categories .category-section {
+    margin-bottom: 20px;
+}
+
+.categories .category {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.categories .category a {
+    text-decoration: none;
+    color: #606060;
+}
+
+.categories .category.active a {
+    color: #000;
+    font-weight: bold;
+}
+
+/* Video Grid Styling */
+.videos {
+    flex-grow: 1;
+    padding-left: 20px;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.video {
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.video img {
+    width: 100%;
+}
+
+.details {
+    display: flex;
+    padding: 10px;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    margin-right: 10px;
+}
+
+.video-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.video-details p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.posted-by {
+    font-size: 12px;
+    color: #606060;
+}
+
+.views-date {
+    display: flex;
+    gap: 5px;
+    font-size: 12px;
+}

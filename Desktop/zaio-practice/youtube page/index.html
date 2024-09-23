@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>YouTube Clone</title>
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <i class="material-icons">view_headline</i>
+        <img src="https://www.vectorlogo.zone/logos/youtube/youtube-ar21.svg" alt="YouTube Logo">
+      </div>
+      <div class="searchbar">
+        <form class="search" action="search_results.html" method="GET">
+          <input type="text" name="query" placeholder="Search" />
+          <button type="submit"><i class="material-icons">search</i></button>
+        </form>
+        <i class="material-icons">keyboard_voice</i>
+      </div>
+      <div class="navigation-icons">
+        <i class="material-icons">video_call</i>
+        <i class="material-icons">apps</i>
+        <i class="material-icons">notifications</i>
+        <i class="material-icons">account_circle</i>
+      </div>
+    </div>
+
+    <div class="mainbody">
+      <div class="categories">
+        <div class="category-section">
+          <span class="category active">
+            <a href="home.html"><i class="material-icons">home</i> Home</a>
+          </span>
+          <span class="category">
+            <a href="explore.html"><i class="material-icons">explore</i> Explore</a>
+          </span>
+          <span class="category">
+            <a href="subscriptions.html"><i class="material-icons">subscriptions</i> Subscriptions</a>
+          </span>
+        </div>
+        <div class="category-section">
+          <span class="category">
+            <a href="library.html"><i class="material-icons">video_library</i> Library</a>
+          </span>
+          <span class="category">
+            <a href="history.html"><i class="material-icons">history</i> History</a>
+          </span>
+          <span class="category">
+            <a href="your_videos.html"><i class="material-icons">video_label</i> Your videos</a>
+          </span>
+          <span class="category">
+            <a href="watch_later.html"><i class="material-icons">watch_later</i> Watch later</a>
+          </span>
+          <span class="category">
+            <a href="#"><i class="material-icons">expand_more</i> Show more</a>
+          </span>
+        </div>
+      </div>
+
+      <div class="videos">
+        <div class="video-grid">
+          <div class="video">
+            <a href="video_page.html">
+              <div class="thumbnail">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt1IgIUzbvxkidENOl2DQWSuwx4o3snyBbKg&usqp=CAU" alt="">
+              </div>
+              <div class="details">
+                <div class="profile">
+                  <img src="https://yt3.ggpht.com/ytc/AOPolaRvvUvn6t9MtTRGuFcz7Ba1f1T6BKYZ01egnEWJ=s68-c-k-c0x00ffffff-no-rj" alt="">
+                </div>
+                <div class="video-details">
+                  <p>Introduction to Web Development - Workshop 1</p>
+                  <div class="posted-by">
+                    <span>FORMULA 1</span>
+                    <div class="views-date">
+                      <span>37k Views</span>
+                      <span>.</span>
+                      <span>1 month ago</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Add more video items as needed -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
